@@ -1,0 +1,24 @@
+baseDir: /v1/
+https: true
+port: 443
+server: api.openai.com
+trustAllServerCertificates: false
+↓Completions [transactions.JsonHttpTransaction]: 
+  httpParameters: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+          - com.twinsoft.convertigo.beans.common.XMLVector: 
+            - java.lang.String: 
+              - ↑value: Content-Type
+            - java.lang.String: 
+              - ↑value: application/json
+  httpVerb: POST
+  subDir: completions
+  ↓__body [variables.RequestableHttpVariable-1673537583451]: 
+    httpMethod: POST
+  ↓__header_Authorization [variables.RequestableHttpVariable-1673537675384]: 
+↓Default_transaction [transactions.HttpTransaction]: 
+  ↑default: true
