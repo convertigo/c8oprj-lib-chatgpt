@@ -102,6 +102,7 @@
       output: true
     ↓Read_CSV [steps.ReadCSVStep-1673631617276]: 
       dataFile: dir + fileName2
+      titleLine: true
     ↓jIterator_1 [steps.SimpleIteratorStep-1673631736653]: 
       expression: filesToDelete
       ↓Delete_file [steps.DeleteStep-1673631736656]: 
