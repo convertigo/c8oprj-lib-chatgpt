@@ -7,13 +7,10 @@
             try {
                 if (doc[property].type != undefined) {
     				if(doc[property].type == "file") {
-    					// base64 is no longer more inserted into doc[property].value we will search it from document attachments
-    					if(doc[property].att_type == true) {
-    						resp[doc[property]["name"]] = {
-    							att_type: true,
-    							name: doc[property].value
-    						};
-    					}
+    					resp[doc[property]["name"]] = {
+    						att_type: true,
+    						name: doc[property].value
+    					};
     				}
                     else {
     					/* others are supported*/
@@ -44,6 +41,7 @@
   expression: |
     '// convert XML to JSON doc
     var jDoc = JSON.parse('''' + com.twinsoft.convertigo.engine.util.XMLUtils.XmlToJson(doc, true, true));
+    log.warn("flatenize jDoc : " + JSON.stringify(jDoc))
     var resp = {};
     flatenize(jDoc.variable.resp, "", resp, jDoc.variable._id);
     var _use_docid = jDoc.variable._id;
