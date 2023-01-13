@@ -21,13 +21,13 @@ For more technical informations : [documentation](./project.md)
      <tr><td>To contribute</td><td>
 
      ```
-     lib_ChatGPT=C:/eclipse-committers-2020-06/runtime-8.x/lib_ChatGPT/.git:branch=master
+     lib_ChatGPT=https://github.com/convertigo/c8oprj-lib-chatgpt.git:branch=master
      ```
      </td></tr>
      <tr><td>To simply use</td><td>
 
      ```
-     lib_ChatGPT=C:/eclipse-committers-2020-06/runtime-8.x/lib_ChatGPT//archive/master.zip
+     lib_ChatGPT=https://github.com/convertigo/c8oprj-lib-chatgpt/archive/master.zip
      ```
      </td></tr>
     </table>
