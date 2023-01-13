@@ -100,5 +100,11 @@
         	filesToDelete.push(dir + fileName2);
         }'
       output: true
+    ↓Read_CSV [steps.ReadCSVStep-1673631617276]: 
+      dataFile: dir + fileName2
+    ↓jIterator_1 [steps.SimpleIteratorStep-1673631736653]: 
+      expression: filesToDelete
+      ↓Delete_file [steps.DeleteStep-1673631736656]: 
+        sourcePath: item
 ↓doc [variables.RequestableVariable-1673618489041]: 
 ↓originalDoc [variables.RequestableVariable-1673618496609]: 
