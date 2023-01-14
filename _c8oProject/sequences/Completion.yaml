@@ -41,7 +41,7 @@
         - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
         - SmartType: 
           - ↑mode: PLAIN
-          - →→: 150
+          - →→: 2048
   ↓Field1 [steps.JsonFieldStep-1673538020395]: 
     key: 
       - xmlizable: 
@@ -54,8 +54,8 @@
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
         - SmartType: 
-          - ↑mode: PLAIN
-          - →→: text-davinci-003
+          - ↑mode: JS
+          - →→: model
   ↓Field2 [steps.JsonFieldStep-1673538104479]: 
     key: 
       - xmlizable: 
@@ -99,8 +99,8 @@
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
         - SmartType: 
-          - ↑mode: PLAIN
-          - →→: 0.6
+          - ↑mode: JS
+          - →→: temperature
   ↓Field5 [steps.JsonFieldStep-1673538194061]: 
     key: 
       - xmlizable: 
@@ -160,6 +160,20 @@
         - java.lang.String: 
           - ↑value: ./document/*
 ↓prompt [variables.RequestableVariable-1673538273530]: 
+  comment: The prompt to ask to ChatGPT
+↓model [variables.RequestableVariable-1673705901844]: 
+  comment: |
+    'The model to be used can be : 
+    * text-davinci-003	
+    * text-curie-001
+    * text-babbage-001
+    * text-ada-001
+    
+    '
+  value: text-davinci-003
+↓temperature [variables.RequestableVariable-1673705914290]: 
+  comment: 'Temperature , decimal from 0 to 1 ex: 0.6'
+  value: 0.6
 ↓testOK [core.TestCase]: 
   ↓prompt [variables.TestCaseVariable-1673538286652]: 
     value: Brainstorm some ideas combining VR and fitness
