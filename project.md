@@ -185,12 +185,12 @@ comment
 
 </p></blockquote></details>
 
-<details><summary><b>formssource_Prompt</b></summary><blockquote><p>
+<details><summary><b>formssource_Prompt</b> : Use this source in a Grid to display ChatGPT reponses to a prompt</summary><blockquote><p>
 
 
 ## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_16x16.png?raw=true "GenericSequence") formssource_Prompt
 
-
+Use this source in a Grid to display ChatGPT reponses to a prompt
 
 <span style="color:DarkGoldenRod">Variables</span>
 
@@ -208,7 +208,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;forms_prompt
 </td>
 <td>
-
+The prompt to ask to ChatGPT
 </td>
 </tr>
 </table>

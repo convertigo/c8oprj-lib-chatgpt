@@ -1,3 +1,4 @@
+comment: Use this source in a Grid to display ChatGPT reponses to a prompt
 ↓Input_variables [steps.InputVariablesStep-1673544592384]: 
 ↓jSimpleSource [steps.SimpleSourceStep-1673546902208]: 
   sourceDefinition: 
@@ -120,6 +121,7 @@
                 - ↑mode: JS
                 - →→: Answer
 ↓forms_prompt [variables.RequestableVariable-1673544138776]: 
+  comment: The prompt to ask to ChatGPT
 ↓TestOK [core.TestCase]: 
   ↓forms_prompt [variables.TestCaseVariable-1673544626152]: 
     value: |
