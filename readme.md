@@ -72,6 +72,18 @@ text-ada-001
 
 ### forms_HandleBatchPrompts
 
+This No Code action will handle ChatGPT prompts in mode.
+
+The action will use a CSV file uploaded in a No Code Studio (Forms) app and will execute all lines of this CSV file against the API.
+
+The file format must have these columns
+
+|title|definition_gpt|prompt_prefix|Prompt_suffix|prompt|model|max_tokens|temperature|top_p|frequency_penalty|presence_penalty|
+|-----|--------------|-------------|-------------|------|-----|----------|-----------|-----|-----------------|----------------|
+|optional|Optional   |A prefix to the prompt | the prompt itself | a suffix to the prompt | the model to be used | max number for tokens (words) | temperatuer (randomicity..) | optional |  optional | optional | 
+
+
+
 **variables**
 
 <table>
