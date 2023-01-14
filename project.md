@@ -95,12 +95,12 @@ does nothing
 <details><summary><span style="color:DarkGoldenRod"><i>Sequences</i></span></summary><blockquote><p>
 
 
-<details><summary><b>Completion</b></summary><blockquote><p>
+<details><summary><b>Completion</b> : The Completion API </summary><blockquote><p>
 
 
 ## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_16x16.png?raw=true "GenericSequence") Completion
 
-
+The Completion API 
 
 <span style="color:DarkGoldenRod">Variables</span>
 
