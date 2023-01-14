@@ -1,5 +1,5 @@
 comment: |
-  'This No Code action will handle ChatGPT prompts in mode.
+  'This No Code action will handle ChatGPT prompts in batch mode.
   
   The action will use a CSV file uploaded in a No Code Studio (Forms) app and will execute all lines of this CSV file against the API.
   
@@ -120,4 +120,6 @@ comment: |
       ↓Delete_file [steps.DeleteStep-1673631736656]: 
         sourcePath: item
 ↓doc [variables.RequestableVariable-1673618489041]: 
+  comment: The No Code app response doc
 ↓originalDoc [variables.RequestableVariable-1673618496609]: 
+  comment: The No Code app form

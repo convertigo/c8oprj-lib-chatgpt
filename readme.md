@@ -72,7 +72,7 @@ text-ada-001
 
 ### forms_HandleBatchPrompts
 
-This No Code action will handle ChatGPT prompts in mode.
+This No Code action will handle ChatGPT prompts in batch mode.
 
 The action will use a CSV file uploaded in a No Code Studio (Forms) app and will execute all lines of this CSV file against the API.
 
@@ -91,10 +91,10 @@ The file format must have these columns
 <th>name</th><th>comment</th>
 </tr>
 <tr>
-<td>doc</td><td></td>
+<td>doc</td><td>The No Code app response doc</td>
 </tr>
 <tr>
-<td>originalDoc</td><td></td>
+<td>originalDoc</td><td>The No Code app form</td>
 </tr>
 </table>
 

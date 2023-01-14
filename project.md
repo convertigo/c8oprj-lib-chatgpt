@@ -148,12 +148,12 @@ Temperature , decimal from 0 to 1 ex: 0.6
 
 </p></blockquote></details>
 
-<details><summary><b>forms_HandleBatchPrompts</b> : This No Code action will handle ChatGPT prompts in mode</summary><blockquote><p>
+<details><summary><b>forms_HandleBatchPrompts</b> : This No Code action will handle ChatGPT prompts in batch mode</summary><blockquote><p>
 
 
 ## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_16x16.png?raw=true "GenericSequence") forms_HandleBatchPrompts
 
-This No Code action will handle ChatGPT prompts in mode.
+This No Code action will handle ChatGPT prompts in batch mode.
 
 The action will use a CSV file uploaded in a No Code Studio (Forms) app and will execute all lines of this CSV file against the API.
 
@@ -181,7 +181,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;doc
 </td>
 <td>
-
+The No Code app response doc
 </td>
 </tr>
 <tr>
@@ -189,7 +189,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;originalDoc
 </td>
 <td>
-
+The No Code app form
 </td>
 </tr>
 </table>
