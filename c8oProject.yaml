@@ -1,6 +1,9 @@
 ↑convertigo: 8.1.0.m006
 ↓lib_ChatGPT [core.Project]: 
-  comment: Convertigo NGX builder Project
+  comment: |
+    '# This is the ChatGPT connector for Convertigo. 
+    This connector will enables Convertigo Applications to use the the ChatGPT AI engine for completions. Given a prompt, ChatGPT will answer and elaborate a response.
+    '
   corsOrigin: =Origin
   version: 1.0
   ↓ChatGPT [connectors.HttpConnector]: 🗏 connectors/ChatGPT.yaml
