@@ -54,10 +54,11 @@ The Completion API
 </tr>
 <tr>
 <td>model</td><td>The model to be used can be : 
-* text-davinci-003	
-* text-curie-001
-* text-babbage-001
-* text-ada-001
+text-davinci-003, 
+text-curie-001, 
+text-babbage-001, 
+text-ada-001
+
 
 </td>
 </tr>
