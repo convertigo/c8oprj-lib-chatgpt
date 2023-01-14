@@ -3,7 +3,9 @@
 
 # lib_ChatGPT
 
-Convertigo NGX builder Project
+# This is the ChatGPT connector for Convertigo. 
+This connector will enables Convertigo Applications to use the the ChatGPT AI engine for completions. Given a prompt, ChatGPT will answer and elaborate a response.
+
 
 
 For more technical informations : [documentation](./project.md)
