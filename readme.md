@@ -15,6 +15,7 @@ For more technical informations : [documentation](./project.md)
     - [Completion](#completion)
     - [forms_HandleBatchPrompts](#forms_handlebatchprompts)
     - [formssource_Prompt](#formssource_prompt)
+    - [HandleBatchPrompts](#handlebatchprompts)
 - [Mobile Library](#mobile-library)
 
 
@@ -110,6 +111,19 @@ Use this source in a Grid to display ChatGPT reponses to a prompt
 </tr>
 <tr>
 <td>forms_prompt</td><td>The prompt to ask to ChatGPT</td>
+</tr>
+</table>
+
+### HandleBatchPrompts
+
+**variables**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>batchFile</td><td></td>
 </tr>
 </table>
 

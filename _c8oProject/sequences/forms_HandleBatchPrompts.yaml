@@ -112,9 +112,20 @@ comment: |
         	filesToDelete.push(dir + fileName2);
         }'
       output: true
-    ↓Read_CSV [steps.ReadCSVStep-1673631617276]: 
-      dataFile: dir + fileName2
-      titleLine: true
+    ↓jElement [steps.ElementStep-1673854224339]: 
+      expression: dir + fileName2
+      nodeName: csvFilePath
+    ↓Call_Sequence [steps.SequenceStep-1673854120452]: 
+      sourceSequence: lib_ChatGPT.HandleBatchPrompts
+      ↓batchFile [variables.StepVariable-1673854120454]: 
+        sourceDefinition: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: 1673854224339
+              - java.lang.String: 
+                - ↑value: ./text()
     ↓jIterator_1 [steps.SimpleIteratorStep-1673631736653]: 
       expression: filesToDelete
       ↓Delete_file [steps.DeleteStep-1673631736656]: 

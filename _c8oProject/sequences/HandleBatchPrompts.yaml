@@ -1,0 +1,6 @@
+↓Read_CSV [steps.ReadCSVStep-1673631617276]: 
+  dataFile: batchFile
+  output: true
+  titleLine: true
+↓batchFile [variables.RequestableVariable-1673854090649]: 
+  value: .//csv/prompts-GPT.csv

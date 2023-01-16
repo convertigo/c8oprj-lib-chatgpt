@@ -11,6 +11,7 @@
   ↓Completion [sequences.GenericSequence]: 🗏 sequences/Completion.yaml
   ↓forms_HandleBatchPrompts [sequences.GenericSequence]: 🗏 sequences/forms_HandleBatchPrompts.yaml
   ↓formssource_Prompt [sequences.GenericSequence]: 🗏 sequences/formssource_Prompt.yaml
+  ↓HandleBatchPrompts [sequences.GenericSequence]: 🗏 sequences/HandleBatchPrompts.yaml
   ↓C8Oforms_reference [references.ProjectSchemaReference]: 
     projectName: C8Oforms=https://github.com/convertigo/C8oForms.git:branch=NGX
   ↓Project_reference [references.ProjectSchemaReference]: 
