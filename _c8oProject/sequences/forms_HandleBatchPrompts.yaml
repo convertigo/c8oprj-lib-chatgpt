@@ -75,7 +75,7 @@ comment: |
       output: true
     ↓Call_Transaction [steps.TransactionStep-1673620423693]: 
       output: true
-      sourceTransaction: C8Oforms.c8oforms_response_fs.GetDocumentAttachment
+      sourceTransaction: lib_ChatGPT.c8oforms_response_fs.GetDocumentAttachment
       ↓_use_attname [variables.StepVariable-1673620423696]: 
         description: Attachment name
       ↓_use_docid [variables.StepVariable-1673620423699]: 

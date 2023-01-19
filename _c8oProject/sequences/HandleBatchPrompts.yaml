@@ -1,6 +1,143 @@
 ↓Read_CSV [steps.ReadCSVStep-1673631617276]: 
-  dataFile: batchFile
-  output: true
+  dataFile: '".//csv/prompts-GPT.csv"'
   titleLine: true
+↓Array [steps.JsonArrayStep-1673855897622]: 
+  key: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: responses
+  ↓Iterator [steps.IteratorStep-1673854855440]: 
+    condition: 2
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1673631617276
+          - java.lang.String: 
+            - ↑value: ./line
+    ↓Concat [steps.XMLConcatStep-1673854882755]: 
+      nodeName: prompt
+      output: false
+      sourcesDefinition: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+          - com.twinsoft.convertigo.beans.common.XMLVector: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: description
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+                  - com.twinsoft.convertigo.beans.common.XMLVector: 
+                    - java.lang.String: 
+                      - ↑value: 1673854855440
+                    - java.lang.String: 
+                      - ↑value: ./prompt/text()
+                - java.lang.String: 
+                  - ↑value: ''
+    ↓Call_Sequence [steps.SequenceStep-1673855055930]: 
+      sourceSequence: lib_ChatGPT.Completion
+      ↓prompt [variables.StepVariable-1673855055932]: 
+        comment: The prompt to ask to ChatGPT
+        sourceDefinition: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: 1673854882755
+              - java.lang.String: 
+                - ↑value: ./text()
+      ↓model [variables.StepVariable-1673855055934]: 
+        comment: |
+          'The model to be used can be : 
+          text-davinci-003, 
+          text-curie-001, 
+          text-babbage-001, 
+          text-ada-001
+          
+          
+          '
+        sourceDefinition: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: 1673854855440
+              - java.lang.String: 
+                - ↑value: ./model/text()
+        value: text-davinci-003
+      ↓temperature [variables.StepVariable-1673855055936]: 
+        comment: 'Temperature , decimal from 0 to 1 ex: 0.6'
+        sourceDefinition: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: 1673854855440
+              - java.lang.String: 
+                - ↑value: ./temperature/text()
+        value: 0.6
+    ↓Object [steps.JsonObjectStep-1673857473208]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: line
+      ↓Field [steps.JsonFieldStep-1673856509891]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: title
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: SOURCE
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1673854855440
+                - java.lang.String: 
+                  - ↑value: ./titre/text()
+      ↓Field1 [steps.JsonFieldStep-1673856549630]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: prompt
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: SOURCE
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1673854855440
+                - java.lang.String: 
+                  - ↑value: ./prompt/text()
+      ↓Field2 [steps.JsonFieldStep-1673856569201]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: answer
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: SOURCE
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1673855055930
+                - java.lang.String: 
+                  - ↑value: ./document/object/choices/object/text/text()
 ↓batchFile [variables.RequestableVariable-1673854090649]: 
   value: .//csv/prompts-GPT.csv
