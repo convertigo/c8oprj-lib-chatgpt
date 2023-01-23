@@ -31,6 +31,12 @@ comment: Use this source in a Grid to display ChatGPT reponses to a prompt
           - ↑mode: PLAIN
           - →→: data
     ↓Object [steps.JsonObjectStep-1673544177649]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: Object
       ↓Field [steps.JsonFieldStep-1673544193396]: 
         isEnabled: false
         key: 

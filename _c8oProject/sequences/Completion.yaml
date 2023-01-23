@@ -27,6 +27,12 @@ comment: The Completion API
             - java.lang.String: 
               - ↑value: ${lib_chatgpt.apikey.secret}
 ↓Object [steps.JsonObjectStep-1673538001966]: 
+  key: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: Object
   output: false
   ↓Field [steps.JsonFieldStep-1673538017235]: 
     key: 

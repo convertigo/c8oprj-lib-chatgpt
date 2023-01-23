@@ -9,7 +9,7 @@
         - ↑mode: PLAIN
         - →→: responses
   ↓Iterator [steps.IteratorStep-1673854855440]: 
-    condition: 2
+    condition: 4
     sourceDefinition: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
@@ -40,6 +40,7 @@
                 - java.lang.String: 
                   - ↑value: ''
     ↓Call_Sequence [steps.SequenceStep-1673855055930]: 
+      isEnabled: false
       sourceSequence: lib_ChatGPT.Completion
       ↓prompt [variables.StepVariable-1673855055932]: 
         comment: The prompt to ask to ChatGPT
@@ -139,5 +140,18 @@
                   - ↑value: 1673855055930
                 - java.lang.String: 
                   - ↑value: ./document/object/choices/object/text/text()
+↓Write_CSV [steps.WriteCSVStep-1674397762625]: 
+  dataFile: '".//csv/responses.csv"'
+  separator: ','
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1673855897622
+        - java.lang.String: 
+          - ↑value: ./Object
+  titleLine: true
+  writeOutputFalse: false
 ↓batchFile [variables.RequestableVariable-1673854090649]: 
   value: .//csv/prompts-GPT.csv
