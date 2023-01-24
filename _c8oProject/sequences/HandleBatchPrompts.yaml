@@ -9,7 +9,7 @@
         - ↑mode: PLAIN
         - →→: responses
   ↓Iterator [steps.IteratorStep-1673854855440]: 
-    condition: 4
+    condition: 2
     sourceDefinition: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
@@ -40,7 +40,6 @@
                 - java.lang.String: 
                   - ↑value: ''
     ↓Call_Sequence [steps.SequenceStep-1673855055930]: 
-      isEnabled: false
       sourceSequence: lib_ChatGPT.Completion
       ↓prompt [variables.StepVariable-1673855055932]: 
         comment: The prompt to ask to ChatGPT
@@ -153,5 +152,33 @@
           - ↑value: ./Object
   titleLine: true
   writeOutputFalse: false
+↓SMTP_send [steps.SmtpStep-1674465181250]: 
+  attachments: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+          - com.twinsoft.convertigo.beans.common.XMLVector: 
+            - java.lang.String: 
+              - ↑value: '".//csv/responses.csv"'
+            - java.lang.String: 
+              - ↑value: '"ChatGPTResponses.csv"'
+  smtpAuthType: ${lib.actions.c8oforms.smtp.security}
+  smtpPassword: x731c565d55a2a2e3f9747ad43539421ba369803d925e5f657302a8f9b0af91173177899c6a22f114f50b0b9bb5e982af
+  smtpPort: ${lib.actions.c8oforms.smtp.port}
+  smtpRecipients: '"olivierp@convertigo.com"'
+  smtpSender: '"${lib.actions.c8oforms.smtp.sender}"'
+  smtpServer: ${lib.actions.c8oforms.smtp.server}
+  smtpSubject: '"Convertigo ChatGPT Batch prompts"'
+  smtpUsername: ${lib.actions.c8oforms.smtp.user}
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1673855897622
+        - java.lang.String: 
+          - ↑value: ./Object
 ↓batchFile [variables.RequestableVariable-1673854090649]: 
   value: .//csv/prompts-GPT.csv
