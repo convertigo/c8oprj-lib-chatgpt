@@ -118,6 +118,18 @@ title: First page
   ↓FormatLayout [ngx.components.UIDynamicAttr-1673884435455]: 
     beanData: '{"ionBean":"FormatLayout","TextAlignment":"plain:ion-text-center"}'
     selfClose: false
+  ↓Button1 [ngx.components.UIDynamicElement-1674728978976]: 
+    beanData: '{"ionBean":"Button"}'
+    tagName: ion-button
+    ↓Label [ngx.components.UIDynamicElement-1674728978971]: 
+      beanData: '{"ionBean":"Label"}'
+      tagName: ion-label
+      ↓Text [ngx.components.UIText-1674728978973]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:some button text
+    ↓Event [ngx.components.UIControlEvent-1674728978975]: 
 ↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer

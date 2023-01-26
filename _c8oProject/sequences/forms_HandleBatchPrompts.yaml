@@ -10,6 +10,7 @@ comment: |
   |optional|Optional   |A prefix to the prompt | the prompt itself | a suffix to the prompt | the model to be used | max number for tokens (words) | temperatuer (randomicity..) | optional |  optional | optional | 
   
   '
+responseTimeout: 3600
 ↓Input_variables [steps.InputVariablesStep-1673620436714]: 
 ↓DefineFlatenize [steps.SimpleStep-1673629835289]: 
   expression: |

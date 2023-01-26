@@ -125,6 +125,9 @@ Use this source in a Grid to display ChatGPT reponses to a prompt
 <tr>
 <td>batchFile</td><td></td>
 </tr>
+<tr>
+<td>toEmail</td><td></td>
+</tr>
 </table>
 
 ## Mobile Library
