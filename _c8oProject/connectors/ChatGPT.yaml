@@ -16,6 +16,7 @@ trustAllServerCertificates: false
             - java.lang.String: 
               - ↑value: application/json
   httpVerb: POST
+  responseTimeout: 200
   subDir: completions
   ↓__body [variables.RequestableHttpVariable-1673537583451]: 
     httpMethod: POST
