@@ -1,8 +1,16 @@
-↑convertigo: 8.2.0.m006
+↑convertigo: 8.1.0.m006
 ↓lib_ChatGPT [core.Project]: 
   comment: |
     '# This is the ChatGPT connector for Convertigo. 
-    This connector will enables Convertigo Applications to use the the ChatGPT AI engine for completions. Given a prompt, ChatGPT will answer and elaborate a response.
+    This connector will enables Convertigo Applications to use the the ChatGPT AI engine for completions. Given a prompt, ChatGPT will answer and elaborate a response. The Connector also provides a batch mode you can use to submit a CSV file containing all the prompts. EAch of these will be processed and the responses will be available in a response CSV file mailed to a given address.
+    
+    ## Symbols
+    
+    | Symbol                     | Usaqe                            |
+    |----------------------------|----------------------------------|
+    | lib_chatgpt.apikey.secret  | The Api key for ChatGPT          |
+    
+    
     '
   corsOrigin: =Origin
   version: 1.0

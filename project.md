@@ -2,7 +2,15 @@
 # ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/core/images/project_color_16x16.png?raw=true "Project") lib_ChatGPT
 
 # This is the ChatGPT connector for Convertigo. 
-This connector will enables Convertigo Applications to use the the ChatGPT AI engine for completions. Given a prompt, ChatGPT will answer and elaborate a response.
+This connector will enables Convertigo Applications to use the the ChatGPT AI engine for completions. Given a prompt, ChatGPT will answer and elaborate a response. The Connector also provides a batch mode you can use to submit a CSV file containing all the prompts. EAch of these will be processed and the responses will be available in a response CSV file mailed to a given address.
+
+## Symbols
+
+| Symbol                     | Usaqe                            |
+|----------------------------|----------------------------------|
+| lib_chatgpt.apikey.secret  | The Api key for ChatGPT          |
+
+
 
 
 <details><summary><span style="color:DarkGoldenRod"><i>Connectors</i></span></summary><blockquote><p>
