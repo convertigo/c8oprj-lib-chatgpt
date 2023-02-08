@@ -5,7 +5,7 @@
     This connector will enables Convertigo Applications to use the the ChatGPT AI engine for completions. Given a prompt, ChatGPT will answer and elaborate a response.
     '
   corsOrigin: =Origin
-  version: 1.0
+  version: 1.0.1
   ↓c8oforms_response_fs [connectors.FullSyncConnector]: 🗏 connectors/c8oforms_response_fs.yaml
   ↓ChatGPT [connectors.HttpConnector]: 🗏 connectors/ChatGPT.yaml
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml

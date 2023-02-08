@@ -95,6 +95,9 @@ The file format must have these columns
 <td>doc</td><td>The No Code app response doc</td>
 </tr>
 <tr>
+<td>forms_email</td><td>The email where ChatGPT responses must be emailed to</td>
+</tr>
+<tr>
 <td>originalDoc</td><td>The No Code app form</td>
 </tr>
 </table>
